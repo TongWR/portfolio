@@ -4,27 +4,98 @@
 
 body {
   color: #2d3c49; /* set default text color */
+  font-family: 'Catamaran', sans-serif ;
 }
 
 #container {
   max-width: 960px;
-  padding: 0 30px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  #container {
+    padding: 0 30px;
+  }
+}
+
 #page-header {
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
   border-bottom: 5px solid #7d97ad;
-  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  #page-header {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 #udacity-logo {
-  width: 80px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 544px) {
+  #udacity-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #udacity-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #name, #title {
+  margin: 0;
   text-transform: uppercase;
+}
+
+#name {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+#title {
+  font-size: 0.75em;
+}
+
+@media (min-width: 544px) {
+  #name {
+    font-size: 2em;
+  }
+
+  #title {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  #name {
+    font-size: 3em;
+  }
+
+  #title {
+    font-size: 1.25em;
+  }
 }
 
 img {
@@ -32,7 +103,25 @@ img {
 }
 
 #featured-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  padding-left: 10px;
+
+  font-weight: 300;
   color: #7d97ad;
+}
+
+@media (min-width: 544px) {
+  #featured-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  #featured-title {
+    font-size: 2em;
+  }
 }
 
 .project-container {
