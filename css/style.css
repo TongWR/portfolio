@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #2d3c49; /* set default text color */
+}
+
 #container {
   max-width: 960px;
   padding: 0 30px;
@@ -19,8 +23,16 @@
   width: 80px;
 }
 
+#name, #title {
+  text-transform: uppercase;
+}
+
 img {
   max-width: 100%;
+}
+
+#featured-title {
+  color: #7d97ad;
 }
 
 .project-container {
@@ -42,6 +54,11 @@ img {
 
 .project-source {
   margin-top: 0;
+}
+
+.project-source > a {
+  text-decoration: none;
+  color: #2d3c49;
 }
 
 /* landscape phone to portrait tablet */
