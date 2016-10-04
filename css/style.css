@@ -32,6 +32,16 @@ img {
 .project {
   flex: 1 0 280px;
   margin: 0;
+  text-align: center;
+}
+
+.project-name {
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.project-source {
+  margin-top: 0;
 }
 
 /* landscape phone to portrait tablet */
