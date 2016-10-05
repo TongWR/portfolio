@@ -34,6 +34,20 @@
   }
 }
 
+#page-footer {
+  margin: 20px 0;
+  padding-top: 20px;
+
+  border-top: 5px solid #7d97ad;
+}
+
+@media (min-width: 768px) {
+  #page-header {
+    margin: 30px 0;
+    padding-top: 30px;
+  }
+}
+
 #udacity-logo {
   width: 40px;
   height: 40px;
