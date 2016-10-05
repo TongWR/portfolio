@@ -153,7 +153,7 @@ img {
 /* landscape phone to portrait tablet */
 @media (min-width: 544px) and (max-width: 767px) {
   .project {
-    flex: 1 0 222px;
+    flex: 1 0 230px;
     margin: 0 15px;
   }
 
