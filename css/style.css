@@ -135,7 +135,7 @@ img {
   }
 }
 
-.project-container {
+.project-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
