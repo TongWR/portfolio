@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 #container {
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
-
   color: #2d3c49; /* set default text color */
   font-family: "Catamaran", sans-serif;
 }
@@ -20,9 +23,7 @@
 #page-header {
   margin: 20px 0;
   padding-bottom: 20px;
-
   border-bottom: 5px solid #7d97ad;
-
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +38,6 @@
 #page-footer {
   margin: 20px 0;
   padding-top: 20px;
-
   border-top: 5px solid #7d97ad;
 }
 
@@ -109,16 +109,10 @@
   }
 }
 
-img {
-  max-width: 100%;
-}
-
 #featured-title {
   margin-top: 30px;
   margin-bottom: 10px;
-
   padding-left: 10px;
-
   font-weight: 300;
   color: #7d97ad;
 }
@@ -148,8 +142,22 @@ img {
 }
 
 .project-name {
+  font-size: 1.25em;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 8px 0;
+}
+
+@media (min-width: 544px) {
+  .project-name {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-name {
+    font-size: 1.75em;
+  }
 }
 
 .project-source {
